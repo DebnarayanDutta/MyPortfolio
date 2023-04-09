@@ -1,0 +1,141 @@
+.navbar{
+    width: 100%;
+    height: 140px;
+    background-image: linear-gradient(to right, rgb(215, 4, 155) , rgb(21, 111, 167));
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-div{
+    position: absolute;
+    left: 10%;
+    top: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+.Links{
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    width: 500px;
+    height: 100px;
+}
+
+.Links ul{
+    list-style: none;
+}
+.home-link{
+    position: absolute;
+    right: 400px;
+    bottom: 30px;
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.projects-link{
+    position: absolute;
+    right: 230px;
+    bottom: 30px;
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.experience-link{
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.Links a:hover{
+    color: rgb(104, 246, 198);
+}
+
+.Links a:hover::after{
+    content:"";
+    width: 60%;
+    height: 2px;
+    background-color: rgb(104, 246, 198);
+    position: absolute;
+    bottom: -4px;
+    left:20px
+}
+
+.toogle-btn i{
+    color: rgb(47, 138, 217);
+    font-size: 40px;
+    cursor: pointer;
+    border: none;
+}
+
+.toogle-btn {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  #open {
+    height: 30vh;
+  }
+  
+  
+  
+  
+
+@media only screen and (max-width: 900px) {
+    .Links a {
+      font-size: 30px;
+    }
+    .Links{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 400px;
+        height: 100px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+    #close a {
+      display: none;
+      
+    }
+
+    #open .toogle-btn {
+        display: flex;
+        position: absolute;
+        right: 30px;
+        top: 100px;
+      }
+
+      #open .Links {
+         width: 300px;
+         height: 400px;
+        
+       }
+
+    
+    
+  }
+
+  @media only screen and (min-width: 600px) {
+    .toogle-btn {
+      display: none;
+    }
+    #open {
+        height: 100px;
+      }
+    
+      #open .Links a{
+        flex-direction: column;
+      }
+    
+  }
+
+
